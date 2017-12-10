@@ -23,12 +23,12 @@ RUN cd /usr/local/lib/python3.5/site-packages \
 	&& rm -rf ta-lib \
 	&& rm ta-lib-0.4.0-src.tar.gz
 
-WORKDIR app
-COPY app /app
+#WORKDIR app
+#COPY app /app
 
 #EXPOSE 9090 9191
 #USER uwsgi
-EXPOSE 5000
+#EXPOSE 5000
 
 #CMD ["/cmd.sh"]
-CMD ["python", "/app/app.py"]
+#CMD ["python", "/app/app.py"]
